@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <a href="https://google.com">Google Something</a>
+                </div>
+            </div>
+        </div>
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img1.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img2.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img3.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img4.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img5.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img6.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img7.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img8.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img9.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img10.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img11.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img12.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img13.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img14.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/img15.jpeg)"></div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            testing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem.childNodes[1].classList.add('img-darken'));
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
